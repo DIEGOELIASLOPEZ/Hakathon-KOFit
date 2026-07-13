@@ -21,5 +21,19 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vb;
+    color: var(--secundario);
+}
 
+/* Empuja las rayitas indicadoras abajo de las tarjetas */
+.carousel-indicators {
+    position: relative; /* Cambiamos de absoluto a relativo para que ocupe espacio real */
+    margin-top: 40px;   /* Le damos un colchón de separación con la base de las cards */
+    margin-bottom: 0;
+}
+
+/* Cambiar el color de las rayitas a tu estilo de Boxeo (Opcional) */
+.carousel-indicators [button] {
+    background-color: #dc3545; /* Rojo peligro / boxeo en lugar del blanco de Bootstrap */
+    height: 4px;              /* Las hace un poquito más gruesas y estilizadas */
+    width: 35px;
 }
