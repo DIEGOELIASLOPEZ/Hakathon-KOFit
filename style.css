@@ -23,18 +23,62 @@ body {
     min-height: 100vb;
 
 }
-.navbar{
+
+/* * Barra de navegación */
+.navbar {
+
+    /* Cambia el color de fondo de la barra de navegación */
     background-color: var(--primario) !important;
+
+    /* Texto con un grosor mayor (negritas) */
     font-weight: 900 !important;
 }
 
+/* Efecto al pasar el cursor sobre los enlaces */
 .navbar .nav-link:hover {
+
+    /* Cambia el color del texto */
     color: var(--secundario) !important;
+
+    /* Mantiene el texto en negritas */
     font-weight: 900 !important;
 }
 
-.navbar-brand img{
+/* Imagen del logotipo */
+.navbar-brand img {
+
+    /* Define el ancho del logotipo */
     width: 5rem;
+
+    /* Ajusta automáticamente la altura para conservar la proporción */
     height: auto;
-    
+
+}/* * Barra de navegación */
+
+
+/* * Hero */
+.hero {
+    height: 50rem;
+}
+
+.hero video {
+    object-fit: cover;
+    z-index: 1;
+}
+
+.video-contenido {
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+.video-texto h2 {
+    margin: 0;
+    color: var(--secundario);
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: 900;
+}
+
+.video-texto .color-rojo {
+    color: var(--rojo);
 }
