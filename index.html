@@ -99,35 +99,35 @@
 
                             <!-- * Enlace "Acerca de Nosotros" -->
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#">
+                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#acerca-de">
                                     Acerca de Nosotros
                                 </a>
                             </li>
 
                             <!-- * Enlace "Productos" -->
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#">
+                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#servicios">
                                     Productos
                                 </a>
                             </li>
 
                             <!-- * Enlace "Testimonios" -->
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#">
+                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#testimonios">
                                     Testimonios
                                 </a>
                             </li>
 
                             <!-- * Enlace "Planes" -->
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#">
+                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#planes-precios">
                                     Planes
                                 </a>
                             </li>
 
                             <!-- * Enlace "Contacto" -->
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#">
+                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#contacto">
                                     Contacto
                                 </a>
                             </li>
@@ -175,21 +175,104 @@
         </nav>
 
         <!-- ========================================================= -->
-        <!-- Hero principal -->
-        <!-- Contendrá la imagen principal o banner de bienvenida -->
+        <!-- * Hero principal -->
+        <!-- * Sección visual principal de la página -->
+        <!-- * Contiene un video de fondo, una capa oscura y el mensaje principal -->
         <!-- ========================================================= -->
-        <div class="hero position-relative overflow-hidden">
 
+        <!-- 
+            position-relative:
+            Establece el contenedor como referencia para los elementos
+            posicionados absolutamente dentro de él.
+            
+            overflow-hidden:
+            Oculta cualquier contenido que sobresalga del tamaño del contenedor,
+            evitando desplazamientos o barras de scroll innecesarias.
+        -->
+        <div class="hero position-relative overflow-hidden">
+            <!-- 
+                position-absolute:
+                Permite colocar el video fuera del flujo normal del documento
+                para utilizarlo como fondo de la sección.
+
+                top-0:
+                Coloca el elemento en la parte superior del contenedor padre.
+
+                start-0:
+                Coloca el elemento alineado al inicio izquierdo.
+
+                w-100:
+                Hace que el video ocupe el 100% del ancho disponible.
+
+                h-100:
+                Hace que el video ocupe el 100% de la altura disponible.
+            -->
             <video class="position-absolute top-0 start-0 w-100 h-100"></video>
 
-            <div class="video-contenido position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+            <!-- 
+                position-absolute:
+                Permite colocar la capa de contenido encima del video.
 
+                top-0:
+                Alinea la capa con la parte superior del Hero.
+
+                start-0:
+                Alinea la capa con el lado izquierdo del Hero.
+
+                w-100:
+                Hace que la capa ocupe todo el ancho disponible.
+
+                h-100:
+                Hace que la capa ocupe toda la altura del Hero.
+
+                d-flex:
+                Convierte el contenedor en un elemento Flexbox,
+                permitiendo controlar la distribución interna.
+
+                align-items-center:
+                Centra verticalmente el contenido dentro del Hero.
+            -->
+            <div class="video-contenido position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+                <!-- 
+                    video-texto:
+                    Contenedor encargado de agrupar todo el contenido textual
+                    del Hero.
+
+                    ms-5:
+                    Agrega margen hacia la izquierda para separar el texto
+                    del borde de la pantalla.
+                -->
                 <div class="video-texto ms-5">
-                    <h2>Golpea más fuerte</h2>
-                    <h2 class="color-rojo">Entrena como un campeón</h2>
-                    <p class="text-white">Equipamiento de nivel profesional diseñado para resistir cada asalto. Forjado en el ring, optimizado para la victoria.</p>
-                    <button type="button" class="btn btn-outline-danger">Comprar Ahora</button>
-                    <button type="button" class="btn btn-outline-secondary">Ver Planes</button>
+                    <!-- 
+                        h2:
+                        Representa el título principal del Hero.
+
+                        Se utilizan dos encabezados separados para crear
+                        jerarquía visual y destacar diferentes mensajes.
+                    -->
+                    <h2>
+                        Golpea más fuerte
+                    </h2>
+                    <!-- 
+                        color-rojo:
+                        Clase personalizada que cambia el color del texto
+                        para resaltar una frase importante del mensaje.
+                    -->
+                    <h2 class="color-rojo">
+                        Entrena como un campeón
+                    </h2>
+                    <p class="text-white">
+                        Equipamiento de nivel profesional diseñado para resistir cada asalto.
+                        Forjado en el ring, optimizado para la victoria.
+                    </p>
+                    <button type="button" class="btn btn-outline-danger">
+                        Comprar Ahora
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary">
+                        Ver Planes
+                    </button>
+
+
                 </div>
 
             </div>
@@ -200,27 +283,27 @@
 
     <main>
 
-        <section class="acerca-de">
+        <section class="acerca-de" id="acerca-de">
             <h2>Acerca de </h2>
             <!-- Conendio aqui -->
         </section>
 
-        <section class="servicios">
+        <section class="servicios" id="servicios">
             <h2>Servios</h2>
             <!-- Conendio aqui -->
         </section>
 
-        <section class="testimonios">
+        <section class="testimonios" id="testimonios">
             <h2>Testimonios</h2>
             <!-- Conendio aqui -->
         </section>
 
-        <section class="planes-precios">
+        <section class="planes-precios" id="planes-precios">
             <h2>Precios y planes</h2>
             <!-- Conendio aqui -->
         </section>
 
-        <section class="contacto">
+        <section class="contacto" id="contacto">
             <h2>Contacto</h2>
             <!-- Conendio aqui -->
         </section>
