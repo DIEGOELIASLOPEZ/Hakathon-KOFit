@@ -23,3 +23,69 @@ body {
     min-height: 100vb;
 
 }
+
+/*SECCIÓN PRECIOS Y PLANES*/
+/* Estilo base de todas las tarjetas*/
+.plan-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-width: 2px !important;
+}
+
+/* Efecto hover general(cuando el mouse pasa por encima)*/
+.plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+/* Plan destacado - Mas grande que los otros planes */
+.plan-destacado {
+    transform: scale(1.05);
+    border-width: 3px !important;
+}
+.plan-destacado:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 20px 50px var(--rojo);
+}
+/* BOTONES*/
+/* Anima las propiedades que cambien en el botón. Plan basico y plan intermedio*/
+.btn-plan {
+    transition: all 0.3s ease;
+}
+/* Hover de botones normales */
+/*El botón cambia de "borde blanco con texto blanco" a "fondo blanco con texto negro"*/
+.btn-plan:hover {
+    background-color: var(--secundario) !important;
+    color: var(--primario) !important;
+    transform: scale(1.02);
+}
+/* Animación suave en boton de comenzar ahora de plan profesional*/
+.btn-plan-destacado {
+    transition: all 0.3s ease;
+}
+/*El botón rojo se oscurece, crece y brilla en btn comenzar ahora de plan profesional*/
+.btn-plan-destacado:hover {
+    background-color: #c62836 !important;
+    transform: scale(1.02);
+    box-shadow: 0 0 20px var(--rojo);
+}
+/* Personalización de colores de Bootstrap con estilos de bootstrap */
+/*Color de os boxes de planes*/
+.bg-dark {
+    background-color: var(--primario) !important;
+}
+.border-secondary {
+    border-color: var(--neutral) !important;
+}
+.text-white-50 {
+    color: var(--secundario) !important;
+}
+/* Estilos para los checkmarks en las listas de precios y planes */
+.list-unstyled li::before {
+    content: "◆";
+    color: var(--rojo);
+    margin-right: 10px;
+    font-size: 0.7rem;
+}
+/* Ajuste de espaciado para el badge */
+.position-absolute.top-0.start-50.translate-middle {
+    margin-top: -12px;
+}

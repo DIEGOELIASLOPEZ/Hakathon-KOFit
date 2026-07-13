@@ -23,11 +23,11 @@
 <body>
     <header class="inicio">
         <nav class="nav">
-            
+
         </nav>
 
         <div class="hero">
-            
+
         </div>
 
     </header>
@@ -49,14 +49,108 @@
             <!-- Conendio aqui -->
         </section>
 
-        <section class="planes-precios">
-            <h2>Precios y planes</h2>
-            <!-- Conendio aqui -->
+        <section class="planes-precios py-5">
+            <!-- CONTENEDOR DE SECCION-->
+            <div class="container">
+                <!--TITULO DE SECCION-->
+                <h2 class="text-center text-white display-4 fw-bold text-uppercase mb-5">Precios y planes</h2>
+                <!--ALERTA DE BOOTSTRAP (OCULTA INICIALMENTE HASTA QUE SE PRESIONA BOTON PARA ADQUIRIR UN PLAN)-->
+                <div id="alertaPlanes" class="alert alert-warning alert-dismissible fade show d-none" role="alert">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                            <i class="bi bi-exclamation-triangle-fill fs-1 text-warning"></i>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h4 class="alert-heading">Servicio en desarrollo</h4>
+                            <p class="mb-0" id="mensajeAlerta">
+                                Lo sentimos, el plan <strong>"PROFESSIONAL"</strong> no está disponible por el momento.
+                            </p>
+                            <hr class="my-2">
+                            <p class="mb-0 small">
+                                <i class="bi bi-clock-history me-1"></i>
+                                Estamos trabajando para ofrecerte este servicio pronto. ¡Gracias por tu interés!
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <!--SECCION DEL PLAN BASICO-->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 text-center border-secondary bg-dark plan-card">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title text-white text-uppercase fs-4">Básico</h3>
+                                <div class="my-3">
+                                    <span class="display-3 fw-bold text-white">$499</span>
+                                    <span class="text-secondary">/ mes</span>
+                                </div>
+                                <ul class="list-unstyled text-start text-white-50 flex-grow-1">
+                                    <li class=" py-2"> Acceso a guías PDF</li>
+                                    <li class=" py-2"> 5% descuento en equipo</li>
+                                    <li class=" py-2"> Newsletter semanal</li>
+                                </ul>
+                                <a href="#" class="btn btn-outline-light  py-2 mt-3 w-100 text-uppercase btn-plan">
+                                    Elegir plan
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--SECCION DEL PLAN PROFESIONAL-->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 text-center border-danger bg-dark plan-card plan-destacado">
+                            <div class="card-body d-flex flex-column position-relative">
+                                <span
+                                    class="badge bg-danger text-white position-absolute top-0 start-50 translate-middle px-4  py-2 rounded-pill fw-bold">
+                                    Más popular
+                                </span>
+                                <h3 class="card-title text-white text-uppercase fs-4 mt-2">Profesional</h3>
+                                <div class="my-3">
+                                    <span class="display-3 fw-bold text-white">$1,299</span>
+                                    <span class="text-secondary">/ mes</span>
+                                </div>
+                                <ul class="list-unstyled text-start text-white-50 flex-grow-1">
+                                    <li class=" py-2">Coaching personalizado</li>
+                                    <li class=" py-2">15% descuento en todo</li>
+                                    <li class=" py-2">Clases en vivo vía Zoom</li>
+                                    <li class=" py-2">Acceso anticipado a drops</li>
+                                </ul>
+                                <a href="#" class="btn btn-danger  py-2 mt-3 w-100 text-uppercase btn-plan-destacado">
+                                    Comenzar ahora
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--SECCION DEL PLAN INTERMEDIO-->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 text-center border-secondary bg-dark plan-card">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title text-white text-uppercase fs-4">Intermedio</h3>
+                                <div class="my-3">
+                                    <span class="display-3 fw-bold text-white">$799</span>
+                                    <span class="text-secondary">/ mes</span>
+                                </div>
+                                <ul class="list-unstyled text-start text-white-50 flex-grow-1">
+                                    <li class=" py-2">Videos de entrenamiento</li>
+                                    <li class=" py-2">10% descuento en equipo</li>
+                                    <li class=" py-2">Plan nutricional base</li>
+                                </ul>
+                                <a href="#" class="btn btn-outline-light py-2 mt-3 w-100 text-uppercase btn-plan">
+                                    Elegir plan
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="contacto">
             <h2>Contacto</h2>
             <!-- Conendio aqui -->
+
         </section>
 
     </main>
