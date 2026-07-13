@@ -23,3 +23,18 @@ body {
     min-height: 100vb;
 
 }
+.navbar{
+    background-color: var(--primario) !important;
+    font-weight: 900 !important;
+}
+
+.navbar .nav-link:hover {
+    color: var(--secundario) !important;
+    font-weight: 900 !important;
+}
+
+.navbar-brand img{
+    width: 5rem;
+    height: auto;
+    
+}
