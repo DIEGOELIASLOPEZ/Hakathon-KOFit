@@ -1,9 +1,9 @@
 :root {
-    --primario: #0A0A0A;
-    --secundario: #FFFFFF;
-    --terceario: #141313;
-    --neutral: #797676;
-    --rojo: #E63946;
+  --primario: #0a0a0a;
+  --secundario: #ffffff;
+  --terceario: #141313;
+  --neutral: #797676;
+  --rojo: #e63946;
 }
 
 h1,
@@ -11,15 +11,99 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: "Archivo Narrow", sans-serif !important;
-    font-weight: bold;
+  font-family: "Archivo Narrow", sans-serif !important;
+  font-weight: bold;
 }
 
 body {
-    background-color: var(--terceario);
-    font-family: "Inter", sans-serif;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vb;
-
+  background-color: var(--terceario);
+  font-family: "Inter", sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vb;
 }
+
+/*************************************************************************
+Aqui empieza mis estilos css para la parte de testimonios*/
+
+/* --- Título del centro de la sección --- */
+.section-title-center {
+  color: var(
+    --secundario
+  ); /* Pintamos el título con el color blanco del equipo */
+  margin-bottom: 40px; /* Le damos espacio abajo para que no se pegue a las tarjetas */
+}
+
+/* --- Fondo y bloque completo de Testimonios --- */
+.testimonials {
+  background-color: var(
+    --terceario
+  ); /* Ponemos el color oscuro de fondo que elegimos */
+  text-align: center; /* Centramos las letras de todo lo que esté aquí adentro */
+  padding: 80px 10%; /* Espacio arriba/abajo y a los lados para que respire */
+}
+
+/* --- El textito chiquito de arriba (TESTIMONIOS) --- */
+.testimonial-kicker {
+  color: var(--rojo); /* Color rojo de la marca */
+  font-size: 14px; /* Lo hacemos chiquito para que parezca etiqueta */
+  font-weight: bold; /* Letra negrita para que resalte */
+  letter-spacing: 2px; /* Separamos las letras para que se vea más moderno */
+  display: block; /* Hacemos que ocupe toda la línea y mande el título abajo */
+  margin-bottom: 15px; /* Espacio abajo para separarlo del h2 */
+}
+
+/* --- El contenedor invisible de las tarjetas --- */
+.testimonials-container {
+  display: flex; /* Activamos Flexbox para poder alinear las tarjetas */
+  gap: 20px; /* Separación de 20px entre cada tarjeta para que no se peguen */
+  justify-content: center; /* Centramos el bloque de tarjetas en la pantalla */
+  flex-wrap: wrap; /* Si la pantalla es chica (celular), avienta las tarjetas abajo solitas */
+  padding: 40px 0; /* Espacio arriba y abajo de la cuadrícula */
+}
+
+/* --- Diseño de cada tarjeta individual --- */
+.testimonial-card {
+  background-color: #1e1e1e; /* Gris oscuro para que resalte sobre el fondo negro */
+  border: 1px solid #333333; /* Un borde gris delgadez para que se note la forma de la caja */
+  padding: 30px 25px; /* Colchón de espacio adentro de la tarjeta */
+  border-radius: 8px; /* Esquinas redondeadas para que se vea más estético */
+  max-width: 320px; /* Que no se estire más de este tamaño en pantallas grandes */
+  flex: 1; /* Obliga a todas las tarjetas a medir lo mismo de ancho */
+  min-width: 280px; /* Tamaño mínimo en celular para que no se aplaste el texto */
+  display: flex; /* Flexbox interno para ordenar lo de adentro */
+  flex-direction: column; /* Ordenamos el texto y el autor uno debajo del otro */
+  justify-content: space-between; /* Empuja el nombre del boxeador siempre hasta el fondo */
+  transition:                /* Hace que los efectos de movimiento y color se vean suaves */
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* --- Efecto cuando pasas el mouse por encima de la tarjeta --- */
+.testimonial-card:hover {
+  transform: translateY(-5px); /* Eleva la tarjeta un poquito hacia arriba */
+  border-color: var(--rojo); /* Cambia el borde gris por el color rojo activo */
+  box-shadow: 0 10px 20px rgba(230, 57, 70, 0.1); /* Le da un ligero brillo rojo abajo */
+}
+
+/* --- Nombre del boxeador famoso --- */
+.testimonial-author {
+  color: var(--rojo); /* Texto en color rojo */
+  font-size: 14px; /* Letra un poco más pequeña */
+  margin: 0; /* Le quitamos márgenes raros que trae el h4 de fábrica */
+  text-transform: uppercase; /* Cambia el nombre automáticamente a MAYÚSCULAS */
+  letter-spacing: 1px; /* Separación sutil de las letras */
+}
+
+/* --- El texto de la opinión o cita --- */
+.testimonial-text {
+  font-style: italic; /* Letra cursiva porque es una frase que alguien dijo */
+  color: var(
+    --secundario
+  ); /* Color blanco para que se lea muy bien en lo oscuro */
+  line-height: 1.6; /* Separación entre renglones para que no canse la vista */
+  font-size: 15px; /* Tamaño de letra del párrafo */
+  margin-bottom: 20px; /* Espacio abajo antes de llegar al nombre del autor */
+}
+/*************************************************************************
+Aqui cierra mis estilos css para la parte de testimonios*/
