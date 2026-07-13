@@ -1,0 +1,25 @@
+:root {
+    --primario: #0A0A0A;
+    --secundario: #FFFFFF;
+    --terceario: #141313;
+    --neutral: #797676;
+    --rojo: #E63946;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Archivo Narrow", sans-serif !important;
+    font-weight: bold;
+}
+
+body {
+    background-color: var(--terceario);
+    font-family: "Inter", sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vb;
+
+}
