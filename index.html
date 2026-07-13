@@ -23,56 +23,149 @@
 <body>
     <header class="inicio">
 
-        <!-- Navegador -->
+        <!-- * Barra de navegación -->
+        <!-- nav: Define la sección de navegación principal del sitio web. -->
+        <!-- navbar-expand-lg: La barra permanece colapsada en pantallas pequeñas y se expande automáticamente a partir del tamaño lg. -->
+        <!-- navbar-dark bg-dark: Establece un fondo oscuro y ajusta automáticamente el color del texto e iconos para mantener un buen contraste. -->
+        <!-- py-3: Agrega padding vertical (arriba y abajo), aumentando la altura de la barra de navegación. -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+
+            <!-- container-fluid: Hace que la barra ocupe todo el ancho disponible de la pantalla. -->
+            <!-- px-4: Agrega un espacio interno horizontal para evitar que el contenido quede pegado a los bordes. -->
             <div class="container-fluid px-4">
+
+                <!-- row: Crea una fila del sistema Grid de Bootstrap. -->
+                <!-- w-100: Hace que la fila ocupe el 100% del ancho disponible. -->
+                <!-- align-items-center: Centra verticalmente todos los elementos de la fila. -->
                 <div class="row w-100 align-items-center">
-                <!-- Logo del Produc -->
+
+                    <!-- * ========================================================= -->
+                    <!-- * Sección izquierda -->
+                    <!-- * Contiene el logotipo de la marca que redirige al inicio -->
+                    <!-- ========================================================= -->
                     <div class="col-6 col-lg-3">
-                        <a class="navbar-brand d-flex align-items-center fw-bold text-uppercase" href="#">
+
+                        <!-- col-6: En dispositivos pequeños ocupa la mitad del ancho disponible. -->
+                        <!-- col-lg-3: En pantallas grandes ocupa 3 de las 12 columnas del Grid. -->
+
+                        <!-- navbar-brand: Identifica el logotipo o nombre principal de la empresa dentro de la barra de navegación. -->
+                        <!-- d-flex: Convierte el elemento en un contenedor Flexbox. -->
+                        <!-- align-items-center: Centra verticalmente la imagen y el texto. -->
+                        <!-- fw-bold: Aplica un grosor de fuente en negritas. -->
+                        <!-- text-uppercase: Convierte automáticamente el texto a mayúsculas. -->
+                        <a class="navbar-brand d-flex align-items-center fw-bold text-uppercase" href="index.html">
+
+                            <!-- Imagen del logotipo -->
                             <img src="assets/logoNav.png" alt="KOBOX Logo" width="40" height="40" class="me-2">
+
+                            <!-- Nombre de la marca -->
                             Kobox
                         </a>
                     </div>
 
+                    <!-- ========================================================= -->
+                    <!-- * Botón del menú hamburguesa -->
+                    <!-- *Visible únicamente en dispositivos móviles -->
+                    <!-- ========================================================= -->
                     <div class="col-6 d-lg-none text-end">
+
+                        <!-- navbar-toggler: Botón que despliega o colapsa el menú de navegación. -->
+                        <!-- data-bs-toggle="collapse": Activa el componente Collapse de Bootstrap. -->
+                        <!-- data-bs-target="#navbarNav": Indica qué elemento será expandido o contraído. -->
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNav">
+
+                            <!-- Icono del menú hamburguesa -->
                             <span class="navbar-toggler-icon"></span>
+
                         </button>
                     </div>
 
+                    <!-- * ========================================================= -->
+                    <!-- * Sección central -->
+                    <!-- * Contiene los enlaces de navegación -->
+                    <!-- * ========================================================= -->
                     <div class="col-12 col-lg-6 collapse navbar-collapse justify-content-center" id="navbarNav">
+
+                        <!-- collapse: Permite ocultar o mostrar el contenido mediante el botón hamburguesa. -->
+                        <!-- navbar-collapse: Aplica el comportamiento propio de Bootstrap para los menús responsivos. -->
+                        <!-- justify-content-center: Centra horizontalmente el contenido. -->
+
+                        <!-- navbar-nav: Agrupa los enlaces de navegación. -->
+                        <!-- gap-3: Agrega separación uniforme entre los elementos. -->
+                        <!-- text-center: Centra el texto. -->
+                        <!-- my-3 my-lg-0: Agrega margen vertical en móviles y lo elimina en pantallas grandes. -->
                         <ul class="navbar-nav gap-3 text-center my-3 my-lg-0">
+
+                            <!-- * Enlace "Acerca de Nosotros" -->
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#">Acerca de Nosotrs</a>
+                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#">
+                                    Acerca de Nosotros
+                                </a>
                             </li>
+
+                            <!-- * Enlace "Productos" -->
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#">Productos</a>
+                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#">
+                                    Productos
+                                </a>
                             </li>
+
+                            <!-- * Enlace "Testimonios" -->
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#">Testimonios</a>
+                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#">
+                                    Testimonios
+                                </a>
                             </li>
+
+                            <!-- * Enlace "Planes" -->
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#">Planes</a>
+                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#">
+                                    Planes
+                                </a>
                             </li>
+
+                            <!-- * Enlace "Contacto" -->
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#">Contacto</a>
+                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#">
+                                    Contacto
+                                </a>
                             </li>
+
                         </ul>
+
                     </div>
 
+                    <!-- * ========================================================= -->
+                    <!-- * Sección derecha -->
+                    <!-- * Botón del carrito de compras -->
+                    <!-- * ========================================================= -->
                     <div class="col-12 col-lg-3 d-none d-lg-flex justify-content-end align-items-center gap-3">
+
+                        <!-- d-none: Oculta el elemento. -->
+                        <!-- d-lg-flex: Lo vuelve visible como Flexbox a partir del tamaño lg. -->
+                        <!-- justify-content-end: Alinea el contenido hacia la derecha. -->
+                        <!-- gap-3: Agrega separación entre elementos. -->
+
                         <button type="button" class="btn btn-outline-light border-0 position-relative p-2">
+
+                            <!-- * Icono del carrito -->
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                                 class="bi bi-cart" viewBox="0 0 16 16">
+
                                 <path
                                     d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+
                             </svg>
+
+                            <!-- * Indicador con la cantidad de productos agregados al carrito -->
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+
                                 0
+
                             </span>
+
                         </button>
 
                     </div>
@@ -81,9 +174,10 @@
             </div>
         </nav>
 
-
-
-
+        <!-- ========================================================= -->
+        <!-- Hero principal -->
+        <!-- Contendrá la imagen principal o banner de bienvenida -->
+        <!-- ========================================================= -->
         <div class="hero">
 
         </div>
