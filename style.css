@@ -2,7 +2,7 @@
   --primario: #0a0a0a;
   --secundario: #ffffff;
   --terceario: #141313;
-  --neutral: #797676;
+  --neutral: #9a9696;
   --rojo: #e63946;
 }
 
@@ -107,3 +107,200 @@ Aqui empieza mis estilos css para la parte de testimonios*/
 }
 /*************************************************************************
 Aqui cierra mis estilos css para la parte de testimonios*/
+
+/* Empuja las rayitas indicadoras abajo de las tarjetas */
+.carousel-indicators {
+  position: relative; /* Cambiamos de absoluto a relativo para que ocupe espacio real */
+  margin-top: 40px; /* Le damos un colchón de separación con la base de las cards */
+  margin-bottom: 0;
+}
+
+/* Cambiar el color de las rayitas a tu estilo de Boxeo (Opcional) */
+.carousel-indicators [button] {
+  background-color: #dc3545; /* Rojo peligro / boxeo en lugar del blanco de Bootstrap */
+  height: 4px; /* Las hace un poquito más gruesas y estilizadas */
+  width: 35px;
+}
+/* * Barra de navegación */
+.navbar {
+  /* Cambia el color de fondo de la barra de navegación */
+  background-color: var(--primario) !important;
+
+  /* Texto con un grosor mayor (negritas) */
+  font-weight: 900 !important;
+
+  /*  Mantener el navegador Fijo*/
+  position: sticky;
+  inset: 0;
+  z-index: 1030;
+}
+
+/* Efecto al pasar el cursor sobre los enlaces */
+.navbar .nav-link:hover {
+  /* Cambia el color del texto */
+  color: var(--secundario) !important;
+
+  /* Mantiene el texto en negritas */
+  font-weight: 900 !important;
+}
+
+/* Imagen del logotipo */
+.navbar-brand img {
+  /* Define el ancho del logotipo */
+  width: 5rem;
+
+  /* Ajusta automáticamente la altura para conservar la proporción */
+  height: auto;
+} /* * Barra de navegación */
+
+/* * Hero */
+.hero {
+  /* Define la altura total de la sección Hero */
+  height: 50rem;
+}
+
+/* Video de fondo del Hero */
+.hero video {
+  /* Ajusta el video para que cubra completamente el contenedor
+       manteniendo la proporción original */
+  object-fit: cover;
+
+  /* Coloca el video en una capa inferior respecto al contenido */
+  z-index: 1;
+}
+
+/* Capa de contenido sobre el video */
+.video-contenido {
+  /* Agrega una capa oscura semitransparente para mejorar
+       la legibilidad del texto sobre el video */
+  background-color: rgba(0, 0, 0, 0.7);
+
+  /* Coloca el contenido por encima del video */
+  z-index: 2;
+}
+
+/* Contenido de texto dentro del Hero */
+.video-texto h2 {
+  /* Elimina los márgenes predeterminados del título */
+  margin: 0;
+
+  /* Define el color del texto del título */
+  color: var(--secundario);
+
+  /* Convierte todo el texto del título a mayúsculas */
+  text-transform: uppercase;
+
+  /* Define un tamaño de fuente grande para destacar el mensaje principal */
+  font-size: 4.5rem;
+
+  /* Aumenta el grosor de la fuente para darle mayor impacto visual */
+  font-weight: 900;
+}
+
+/* Palabra destacada dentro del título del Hero */
+.video-texto .color-rojo {
+  /* Cambia el color del texto para resaltar una parte importante
+       del mensaje principal */
+  color: var(--rojo);
+}
+
+/*Acerca de*/
+
+.acerca-de {
+  color: var(--secundario);
+}
+
+.acerca-de p {
+  color: var(--neutral);
+}
+
+.acerca-de .texto-rojo {
+  color: var(--rojo);
+}
+
+.texto-justificado {
+  text-align: justify;
+}
+
+.boton-rojo,
+.experiencia {
+  background-color: var(--rojo);
+  color: var(--secundario);
+}
+
+.boton-rojo:hover {
+  background-color: var(--secundario);
+  color: var(--primario);
+}
+
+.experiencia {
+  min-width: 140px;
+}
+
+/*SECCIÓN PRECIOS Y PLANES*/
+/* Estilo base de todas las tarjetas*/
+.plan-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border-width: 2px !important;
+}
+
+/* Efecto hover general(cuando el mouse pasa por encima)*/
+.plan-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+/* Plan destacado - Mas grande que los otros planes */
+.plan-destacado {
+  transform: scale(1.05);
+  border-width: 3px !important;
+}
+.plan-destacado:hover {
+  transform: scale(1.05) translateY(-10px);
+  box-shadow: 0 20px 50px var(--rojo);
+}
+/* BOTONES*/
+/* Anima las propiedades que cambien en el botón. Plan basico y plan intermedio*/
+.btn-plan {
+  transition: all 0.3s ease;
+}
+/* Hover de botones normales */
+/*El botón cambia de "borde blanco con texto blanco" a "fondo blanco con texto negro"*/
+.btn-plan:hover {
+  background-color: var(--secundario) !important;
+  color: var(--primario) !important;
+  transform: scale(1.02);
+}
+/* Animación suave en boton de comenzar ahora de plan profesional*/
+.btn-plan-destacado {
+  transition: all 0.3s ease;
+}
+/*El botón rojo se oscurece, crece y brilla en btn comenzar ahora de plan profesional*/
+.btn-plan-destacado:hover {
+  background-color: #c62836 !important;
+  transform: scale(1.02);
+  box-shadow: 0 0 20px var(--rojo);
+}
+/* Personalización de colores de Bootstrap con estilos de bootstrap */
+/*Color de os boxes de planes*/
+.bg-dark {
+  background-color: var(--primario) !important;
+}
+.border-secondary {
+  border-color: var(--neutral) !important;
+}
+.text-white-50 {
+  color: var(--secundario) !important;
+}
+/* Estilos para los checkmarks en las listas de precios y planes */
+.list-unstyled li::before {
+  content: "◆";
+  color: var(--rojo);
+  margin-right: 10px;
+  font-size: 0.7rem;
+}
+/* Ajuste de espaciado para el badge */
+.position-absolute.top-0.start-50.translate-middle {
+  margin-top: -12px;
+}
