@@ -25,11 +25,8 @@ body {
 }
 
 /*Acerca de*/
-.acerca-de {
-    color: var(--secundario);
-}
 
-.acerca-de h3 {
+.acerca-de {
     color: var(--secundario);
 }
 
@@ -37,14 +34,18 @@ body {
     color: var(--neutral);
 }
 
+.acerca-de .texto-rojo {
+    color: var(--rojo);
+}
+
 .texto-justificado {
     text-align: justify;
 }
 
-.boton-rojo {
+.boton-rojo,
+.experiencia {
     background-color: var(--rojo);
     color: var(--secundario);
-    font-weight: bold;
 }
 
 .boton-rojo:hover {
@@ -53,11 +54,6 @@ body {
 }
 
 .experiencia {
-    background-color: var(--rojo);
-    color: var(--secundario);
     min-width: 140px;
 }
 
-.acerca-de .texto-rojo {
-    color: var(--rojo);
-}
