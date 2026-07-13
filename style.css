@@ -2,7 +2,7 @@
     --primario: #0A0A0A;
     --secundario: #FFFFFF;
     --terceario: #141313;
-    --neutral: #797676;
+    --neutral: #9A9696;
     --rojo: #E63946;
 }
 
@@ -20,6 +20,44 @@ body {
     font-family: "Inter", sans-serif;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    min-height: 100vb;
+    min-height: 100vh;
 
+}
+
+/*Acerca de*/
+.acerca-de {
+    color: var(--secundario);
+}
+
+.acerca-de h3 {
+    color: var(--secundario);
+}
+
+.acerca-de p {
+    color: var(--neutral);
+}
+
+.texto-justificado {
+    text-align: justify;
+}
+
+.boton-rojo {
+    background-color: var(--rojo);
+    color: var(--secundario);
+    font-weight: bold;
+}
+
+.boton-rojo:hover {
+    background-color: var(--secundario);
+    color: var(--primario);
+}
+
+.experiencia {
+    background-color: var(--rojo);
+    color: var(--secundario);
+    min-width: 140px;
+}
+
+.acerca-de .texto-rojo {
+    color: var(--rojo);
 }
