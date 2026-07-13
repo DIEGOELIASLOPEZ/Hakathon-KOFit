@@ -9,4 +9,7 @@ const mainForm = () =>{
     }
 }
 
-document.getElementById('form-send').addEventListener('submit', mainForm);
+document.getElementById('form-send').addEventListener('submit', (e)=>{
+    e.preventDefault();
+    mainForm();
+});
