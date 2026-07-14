@@ -9,108 +9,56 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Iconos de Boostrap -->
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    >   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bpmf+Zihi+Kai+Std&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://jsdelivr.net">
+    <!-- <link rel="stylesheet" href="https://jsdelivr.net"> -->
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/Favicon.png" type="image/x-icon">
 
-  <body>
+<body>
     <header class="inicio">
 
         <!-- * Barra de navegación -->
-        <!-- nav: Define la sección de navegación principal del sitio web. -->
-        <!-- navbar-expand-lg: La barra permanece colapsada en pantallas pequeñas y se expande automáticamente a partir del tamaño lg. -->
-        <!-- navbar-dark bg-dark: Establece un fondo oscuro y ajusta automáticamente el color del texto e iconos para mantener un buen contraste. -->
-        <!-- py-3: Agrega padding vertical (arriba y abajo), aumentando la altura de la barra de navegación. -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
-
-            <!-- container-fluid: Hace que la barra ocupe todo el ancho disponible de la pantalla. -->
-            <!-- px-4: Agrega un espacio interno horizontal para evitar que el contenido quede pegado a los bordes. -->
             <div class="container-fluid px-4">
-
-                <!-- row: Crea una fila del sistema Grid de Bootstrap. -->
-                <!-- w-100: Hace que la fila ocupe el 100% del ancho disponible. -->
-                <!-- align-items-center: Centra verticalmente todos los elementos de la fila. -->
                 <div class="row w-100 align-items-center">
 
-                    <!-- * ========================================================= -->
+                    <!--  ========================================================= -->
                     <!-- * Sección izquierda -->
                     <!-- * Contiene el logotipo de la marca que redirige al inicio -->
                     <!-- ========================================================= -->
                     <div class="col-6 col-lg-3">
-
-                        <!-- col-6: En dispositivos pequeños ocupa la mitad del ancho disponible. -->
-                        <!-- col-lg-3: En pantallas grandes ocupa 3 de las 12 columnas del Grid. -->
-
-                        <!-- navbar-brand: Identifica el logotipo o nombre principal de la empresa dentro de la barra de navegación. -->
-                        <!-- d-flex: Convierte el elemento en un contenedor Flexbox. -->
-                        <!-- align-items-center: Centra verticalmente la imagen y el texto. -->
-                        <!-- fw-bold: Aplica un grosor de fuente en negritas. -->
-                        <!-- text-uppercase: Convierte automáticamente el texto a mayúsculas. -->
-                        <a class="navbar-brand d-flex align-items-center fw-bold text-uppercase" href="index.html">
+                        <a class="navbar-brand d-flex align-items-center fw-bold text-uppercase" href="#hero">
 
                             <!-- Imagen del logotipo -->
                             <img src="assets/logoNav.png" alt="KOBOX Logo" width="40" height="40" class="me-2">
-
                             <!-- Nombre de la marca -->
                             KoFit
                         </a>
                     </div>
-
-                    <!-- ========================================================= -->
-                    <!-- * Botón del menú hamburguesa -->
-                    <!-- *Visible únicamente en dispositivos móviles -->
-                    <!-- ========================================================= -->
-                    <div class="col-6 d-lg-none text-end">
-
-                        <!-- navbar-toggler: Botón que despliega o colapsa el menú de navegación. -->
-                        <!-- data-bs-toggle="collapse": Activa el componente Collapse de Bootstrap. -->
-                        <!-- data-bs-target="#navbarNav": Indica qué elemento será expandido o contraído. -->
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav">
-
-                            <!-- Icono del menú hamburguesa -->
-                            <span class="navbar-toggler-icon"></span>
-
-                        </button>
-                    </div>
-
                     <!-- * ========================================================= -->
                     <!-- * Sección central -->
                     <!-- * Contiene los enlaces de navegación -->
                     <!-- * ========================================================= -->
                     <div class="col-12 col-lg-6 collapse navbar-collapse justify-content-center" id="navbarNav">
-
-                        <!-- collapse: Permite ocultar o mostrar el contenido mediante el botón hamburguesa. -->
-                        <!-- navbar-collapse: Aplica el comportamiento propio de Bootstrap para los menús responsivos. -->
-                        <!-- justify-content-center: Centra horizontalmente el contenido. -->
-
-                        <!-- navbar-nav: Agrupa los enlaces de navegación. -->
-                        <!-- gap-3: Agrega separación uniforme entre los elementos. -->
-                        <!-- text-center: Centra el texto. -->
-                        <!-- my-3 my-lg-0: Agrega margen vertical en móviles y lo elimina en pantallas grandes. -->
                         <ul class="navbar-nav gap-3 text-center my-3 my-lg-0">
 
                             <!-- * Enlace "Acerca de Nosotros" -->
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#acerca-de">
+                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#acerca-nosotros">
                                     Acerca de Nosotros
                                 </a>
                             </li>
 
                             <!-- * Enlace "Productos" -->
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#servicios">
+                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#productos">
                                     Productos
                                 </a>
                             </li>
@@ -124,17 +72,18 @@
 
                             <!-- * Enlace "Planes" -->
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#planes-precios">
+                                <a class="nav-link text-uppercase fw-bold text-white-50" href="#precios-planes">
                                     Planes
                                 </a>
                             </li>
 
-                            <!-- * Enlace "Contacto" -->
                             <li class="nav-item">
                                 <a class="nav-link text-uppercase fw-bold text-white-50" href="#contacto">
                                     Contacto
                                 </a>
                             </li>
+
+
 
                         </ul>
 
@@ -144,32 +93,26 @@
                     <!-- * Sección derecha -->
                     <!-- * Botón del carrito de compras -->
                     <!-- * ========================================================= -->
-                    <div class="col-12 col-lg-3 d-none d-lg-flex justify-content-end align-items-center gap-3">
+                    <div class="col-auto col-lg-3 d-flex justify-content-end align-items-center gap-2 ms-auto p-0">
 
-                        <!-- d-none: Oculta el elemento. -->
-                        <!-- d-lg-flex: Lo vuelve visible como Flexbox a partir del tamaño lg. -->
-                        <!-- justify-content-end: Alinea el contenido hacia la derecha. -->
-                        <!-- gap-3: Agrega separación entre elementos. -->
-
-                        <button type="button" class="btn btn-outline-light border-0 position-relative p-2">
-
-                            <!-- * Icono del carrito -->
+                        <button id="btnCart" type="button" class="btn btn-outline-light border-0 position-relative p-2"
+                            data-bs-toggle="offcanvas" data-bs-target="#carritoMenu">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                                 class="bi bi-cart" viewBox="0 0 16 16">
-
                                 <path
                                     d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
-
                             </svg>
-
-                            <!-- * Indicador con la cantidad de productos agregados al carrito -->
                             <span
-                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </button>
 
-                                0
-
-                            </span>
-
+                        <!-- * ========================================================= -->
+                        <!-- * Boton Responsivo -->
+                        <!-- * Navegador -->
+                        <!-- * ========================================================= -->
+                        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
                         </button>
 
                     </div>
@@ -182,86 +125,14 @@
         <!-- * Hero principal -->
         <!-- * Sección visual principal de la página -->
         <!-- * Contiene un video de fondo, una capa oscura y el mensaje principal -->
-        <!-- ========================================================= -->
 
-        <!-- 
-            position-relative:
-            Establece el contenedor como referencia para los elementos
-            posicionados absolutamente dentro de él.
-            
-            overflow-hidden:
-            Oculta cualquier contenido que sobresalga del tamaño del contenedor,
-            evitando desplazamientos o barras de scroll innecesarias.
-        -->
-        <div class="hero position-relative overflow-hidden">
-            <!-- 
-                position-absolute:
-                Permite colocar el video fuera del flujo normal del documento
-                para utilizarlo como fondo de la sección.
-
-                top-0:
-                Coloca el elemento en la parte superior del contenedor padre.
-
-                start-0:
-                Coloca el elemento alineado al inicio izquierdo.
-
-                w-100:
-                Hace que el video ocupe el 100% del ancho disponible.
-
-                h-100:
-                Hace que el video ocupe el 100% de la altura disponible.
-            -->
+        <div id="hero" class="hero position-relative overflow-hidden">
             <video class="position-absolute top-0 start-0 w-100 h-100"></video>
-
-            <!-- 
-                position-absolute:
-                Permite colocar la capa de contenido encima del video.
-
-                top-0:
-                Alinea la capa con la parte superior del Hero.
-
-                start-0:
-                Alinea la capa con el lado izquierdo del Hero.
-
-                w-100:
-                Hace que la capa ocupe todo el ancho disponible.
-
-                h-100:
-                Hace que la capa ocupe toda la altura del Hero.
-
-                d-flex:
-                Convierte el contenedor en un elemento Flexbox,
-                permitiendo controlar la distribución interna.
-
-                align-items-center:
-                Centra verticalmente el contenido dentro del Hero.
-            -->
             <div class="video-contenido position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
-                <!-- 
-                    video-texto:
-                    Contenedor encargado de agrupar todo el contenido textual
-                    del Hero.
-
-                    ms-5:
-                    Agrega margen hacia la izquierda para separar el texto
-                    del borde de la pantalla.
-                -->
                 <div class="video-texto ms-5">
-                    <!-- 
-                        h2:
-                        Representa el título principal del Hero.
-
-                        Se utilizan dos encabezados separados para crear
-                        jerarquía visual y destacar diferentes mensajes.
-                    -->
                     <h2>
                         Golpea más fuerte
                     </h2>
-                    <!-- 
-                        color-rojo:
-                        Clase personalizada que cambia el color del texto
-                        para resaltar una frase importante del mensaje.
-                    -->
                     <h2 class="color-rojo">
                         Entrena como un campeón
                     </h2>
@@ -269,12 +140,12 @@
                         Equipamiento de nivel profesional diseñado para resistir cada asalto.
                         Forjado en el ring, optimizado para la victoria.
                     </p>
-                    <button type="button" class="btn btn-outline-danger">
+                    <a href="#productos" type="button" class="btn btn-outline-danger">
                         Comprar Ahora
-                    </button>
-                    <button type="button" class="btn btn-outline-secondary">
+                    </a>
+                    <a href="#precios-planes" type="button" class="btn btn-outline-secondary">
                         Ver Planes
-                    </button>
+                    </a>
 
 
                 </div>
@@ -284,21 +155,21 @@
         </div>
     </header>
 
-    <main>  
+    <main>
 
         <!-- sección Acerca de para explicar la identidad y propuesta de KOFit -->
         <section class="acerca-de py-5" id="acerca">
+            <span class="testimonial-kicker text-center" id="acerca-nosotros">Acerca de Nosotros</span>
+            <!-- Título principal -->
+            <h2 class="section-title-center text-center text-uppercase">Conoce a la Merjor Marca Deportiva</h2>
             <div class="container">
                 <div class="row align-items-center g-5">
 
                     <!-- imagen representativa del entrenamiento de box -->
                     <div class="col-lg-6">
                         <div class="position-relative">
-                            <img
-                                src="assets/BoxeadorEntrenando.png"
-                                alt="Boxeador entrenando"
-                                class="img-fluid rounded-3"
-                            >
+                            <img src="assets/BoxeadorEntrenando.png" alt="Boxeador entrenando"
+                                class="img-fluid rounded-3">
 
                             <!-- experiencia de KOFit -->
                             <div class="experiencia position-absolute bottom-0 start-0 p-3">
@@ -378,218 +249,231 @@
                 </div>
             </div>
 
-        <section class="servicios container mt-5">
-            <div class="row">
-                <div class="col-6">
-                    <h2>NUESTRA SELECCIÓN</h2>
-                </div>
-                <div class="col-6 text-end">
-                    <!-- <a id="verTodos"
+            <section class="servicios container mt-5">
+                <span class="testimonial-kicker text-center" id="productos">Productos</span>
+                <!-- Título principal -->
+                <h2 class="section-title-center text-center text-uppercase">NUESTRA SELECCIÓN</h2>
+                <div class="row">
+                    <div class="col-6">
+                    </div>
+                    <div class="col-6 text-end">
+                        <!-- <a id="verTodos"
                         class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                         href="#">Ver Todos</a> -->
-                </div>
-            </div>
-
-            <div id="carruselProductos" class="carousel slide container mt-5" data-bs-ride="carousel">
-                <!-- Aquí es donde JavaScript inyectará las páginas del carrusel -->
-                <div class="carousel-inner" id="contenedor-prods"></div>
-
-                <!-- Controles (Anterior y Siguiente) -->
-                <div id="contenedorControl" class="carousel-indicators mt-5">
-                    
-                </div>
-            </div>
-        </section>
-
-           <!-- SECCIÓN: TESTIMONIOS (OPINIONES DE CLIENTES)-->
-      <section id="testimonios" class="testimonials">
-        <!-- Ceja informativa superior (Kicker) para contexto visual rápido -->
-        <span class="testimonial-kicker">TESTIMONIOS</span>
-        <!-- Título principal -->
-        <h2 class="section-title-center">LO QUE DICEN LOS CAMPEONES</h2>
-        <!-- Contenedor Grande, DENTRO DE ESTE VAN TODAS LAS CAJITAS DE TESTIMONIOS -->
-        <div class="testimonials-container">
-          <!-- Primera Tarjeta: Testimonio 1 -->
-          <div class="testimonial-card">
-            <p class="testimonial-text">
-              "Busco guantes ligeros pero con buena protección para mantener mis
-              combinaciones rápidas. KOFit me da la velocidad exacta que
-              necesito en el ring."
-            </p>
-            <h4 class="testimonial-author">
-              Manny Pacquiao, Único Campeón de 8 Divisiones
-            </h4>
-          </div>
-          <!-- Aquí cierra LA PRIMERA TARJETA -->
-          <!-- Segunda Tarjeta: Testimonio 2 -->
-          <div class="testimonial-card">
-            <!-- Corregido: Aquí faltaba el signo '>' al final -->
-            <p class="testimonial-text">
-              "El forro interno es ultrasuave y absorbe el sudor de inmediato.
-              Puedes meterle horas al costal diario y tus manos se mantienen
-              frescas."
-            </p>
-            <h4 class="testimonial-author">
-              Saul "Canelo" Álvarez, Campeón Indiscutido del Peso Super-Mediano
-            </h4>
-          </div>
-          <!-- Tercera Tarjeta: Testimonio 3 -->
-          <div class="testimonial-card">
-            <p class="testimonial-text">
-              "Hay guantes que se rompen en el primer asalto, pero estos
-              aguantan la presión de verdad. Tienen el verdadero aguante
-              mexicano en cada golpe."
-            </p>
-            <h4 class="testimonial-author">
-              Julio César Chávez, Gran Campeón Mexicano
-            </h4>
-          </div>
-          <!-- Cuarta Tarjeta: Testimonio 4 -->
-          <div class="testimonial-card">
-            <p class="testimonial-text">
-              "La careta Elite de KOFit no te quita nada de visibilidad para el
-              contragolpe. Junto con sus vendas de gel, la protección en los
-              pómulos y cejas es impecable."
-            </p>
-            <h4 class="testimonial-author">
-              Juan Manuel Márquez, Campeón Multi-División
-            </h4>
-          </div>
-          <!-- Quinta Tarjeta: Testimonio 5 -->
-          <div class="testimonial-card">
-            <p class="testimonial-text">
-              "Para aguantar golpes de peso pesado necesitas un equipo
-              indestructible. El costal de piel KOFit absorbe la potencia pura
-              sin deformarse ni romperse."
-            </p>
-            <h4 class="testimonial-author">
-              Mike Tyson, Ex-Campeón de Peso Pesado
-            </h4>
-          </div>
-        </div>
-        <!-- SECCIÓN: TESTIMONIOS (OPINIONES DE CLIENTES)  CIERRA EL CONTENEDOR GRANDE-->
-      </section>
-
-
-        <section class="planes-precios py-5">
-            <!-- CONTENEDOR DE SECCION-->
-            <div class="container">
-                <!--TITULO DE SECCION-->
-                <h2 class="text-center text-white display-4 fw-bold text-uppercase mb-5">Precios y planes</h2>
-                <!--ALERTA DE BOOTSTRAP (OCULTA INICIALMENTE HASTA QUE SE PRESIONA BOTON PARA ADQUIRIR UN PLAN)-->
-                <div id="alertaPlanes" class="alert alert-warning alert-dismissible fade show d-none" role="alert">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-shrink-0">
-                            <i class="bi bi-exclamation-triangle-fill fs-1 text-warning"></i>
-                        </div>
-                        <div class="flex-grow-1 ms-3">
-                            <h4 class="alert-heading">Servicio en desarrollo</h4>
-                            <p class="mb-0" id="mensajeAlerta">
-                                Lo sentimos, el plan <strong>"PROFESSIONAL"</strong> no está disponible por el momento.
-                            </p>
-                            <hr class="my-2">
-                            <p class="mb-0 small">
-                                <i class="bi bi-clock-history me-1"></i>
-                                Estamos trabajando para ofrecerte este servicio pronto. ¡Gracias por tu interés!
-                            </p>
-                        </div>
                     </div>
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
 
-                <div class="row g-4 justify-content-center">
-                    <!--SECCION DEL PLAN BASICO-->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card h-100 text-center border-secondary bg-dark plan-card">
-                            <div class="card-body d-flex flex-column">
-                                <h3 class="card-title text-white text-uppercase fs-4">Básico</h3>
-                                <div class="my-3">
-                                    <span class="display-3 fw-bold text-white">$499</span>
-                                    <span class="text-secondary">/ mes</span>
+                <div id="carruselProductos" class="carousel slide container mt-5" data-bs-ride="carousel">
+                    <!-- Aquí es donde JavaScript inyectará las páginas del carrusel -->
+                    <div class="carousel-inner" id="contenedor-prods"></div>
+
+                    <!-- Controles (Anterior y Siguiente) -->
+                    <div id="contenedorControl" class="carousel-indicators mt-5">
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN: TESTIMONIOS (OPINIONES DE CLIENTES)-->
+            <section id="testimonios" class="testimonials">
+                <!-- Ceja informativa superior (Kicker) para contexto visual rápido -->
+                <span class="testimonial-kicker">TESTIMONIOS</span>
+                <!-- Título principal -->
+                <h2 class="section-title-center">LO QUE DICEN LOS CAMPEONES</h2>
+                <!-- Contenedor Grande, DENTRO DE ESTE VAN TODAS LAS CAJITAS DE TESTIMONIOS -->
+                <div class="testimonials-container">
+                    <!-- Primera Tarjeta: Testimonio 1 -->
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">
+                            "Busco guantes ligeros pero con buena protección para mantener mis
+                            combinaciones rápidas. KOFit me da la velocidad exacta que
+                            necesito en el ring."
+                        </p>
+                        <h4 class="testimonial-author">
+                            Manny Pacquiao, Único Campeón de 8 Divisiones
+                        </h4>
+                    </div>
+                    <!-- Aquí cierra LA PRIMERA TARJETA -->
+                    <!-- Segunda Tarjeta: Testimonio 2 -->
+                    <div class="testimonial-card">
+                        <!-- Corregido: Aquí faltaba el signo '>' al final -->
+                        <p class="testimonial-text">
+                            "El forro interno es ultrasuave y absorbe el sudor de inmediato.
+                            Puedes meterle horas al costal diario y tus manos se mantienen
+                            frescas."
+                        </p>
+                        <h4 class="testimonial-author">
+                            Saul "Canelo" Álvarez, Campeón Indiscutido del Peso Super-Mediano
+                        </h4>
+                    </div>
+                    <!-- Tercera Tarjeta: Testimonio 3 -->
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">
+                            "Hay guantes que se rompen en el primer asalto, pero estos
+                            aguantan la presión de verdad. Tienen el verdadero aguante
+                            mexicano en cada golpe."
+                        </p>
+                        <h4 class="testimonial-author">
+                            Julio César Chávez, Gran Campeón Mexicano
+                        </h4>
+                    </div>
+                    <!-- Cuarta Tarjeta: Testimonio 4 -->
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">
+                            "La careta Elite de KOFit no te quita nada de visibilidad para el
+                            contragolpe. Junto con sus vendas de gel, la protección en los
+                            pómulos y cejas es impecable."
+                        </p>
+                        <h4 class="testimonial-author">
+                            Juan Manuel Márquez, Campeón Multi-División
+                        </h4>
+                    </div>
+                    <!-- Quinta Tarjeta: Testimonio 5 -->
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">
+                            "Para aguantar golpes de peso pesado necesitas un equipo
+                            indestructible. El costal de piel KOFit absorbe la potencia pura
+                            sin deformarse ni romperse."
+                        </p>
+                        <h4 class="testimonial-author">
+                            Mike Tyson, Ex-Campeón de Peso Pesado
+                        </h4>
+                    </div>
+                </div>
+                <!-- SECCIÓN: TESTIMONIOS (OPINIONES DE CLIENTES)  CIERRA EL CONTENEDOR GRANDE-->
+            </section>
+
+
+            <section class="planes-precios py-5">
+                <!-- CONTENEDOR DE SECCION-->
+                <div class="container">
+                    <!--TITULO DE SECCION-->
+                    <span class="testimonial-kicker text-center" id="precios-planes">Precios y Planes</span>
+                    <!-- Título principal -->
+                    <h2 class="section-title-center text-center">Conoce tu Mejor Rutina</h2>
+                    <!--ALERTA DE BOOTSTRAP (OCULTA INICIALMENTE HASTA QUE SE PRESIONA BOTON PARA ADQUIRIR UN PLAN)-->
+                    <div id="alertaPlanes" class="alert alert-warning alert-dismissible fade show d-none" role="alert">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                                <i class="bi bi-exclamation-triangle-fill fs-1 text-warning"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h4 class="alert-heading">Servicio en desarrollo</h4>
+                                <p class="mb-0" id="mensajeAlerta">
+                                    Lo sentimos, el plan <strong>"PROFESSIONAL"</strong> no está disponible por el
+                                    momento.
+                                </p>
+                                <hr class="my-2">
+                                <p class="mb-0 small">
+                                    <i class="bi bi-clock-history me-1"></i>
+                                    Estamos trabajando para ofrecerte este servicio pronto. ¡Gracias por tu interés!
+                                </p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+
+                    <div class="row g-4 justify-content-center">
+                        <!--SECCION DEL PLAN BASICO-->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card h-100 text-center border-secondary bg-dark plan-card">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title text-white text-uppercase fs-4">Básico</h3>
+                                    <div class="my-3">
+                                        <span class="display-3 fw-bold text-white">$499</span>
+                                        <span class="text-secondary">/ mes</span>
+                                    </div>
+                                    <ul class="list-unstyled text-start text-white-50 flex-grow-1">
+                                        <li class=" py-2"> Acceso a guías PDF</li>
+                                        <li class=" py-2"> 5% descuento en equipo</li>
+                                        <li class=" py-2"> Newsletter semanal</li>
+                                    </ul>
+                                    <a href="#" class="btn btn-outline-light  py-2 mt-3 w-100 text-uppercase btn-plan">
+                                        Elegir plan
+                                    </a>
                                 </div>
-                                <ul class="list-unstyled text-start text-white-50 flex-grow-1">
-                                    <li class=" py-2"> Acceso a guías PDF</li>
-                                    <li class=" py-2"> 5% descuento en equipo</li>
-                                    <li class=" py-2"> Newsletter semanal</li>
-                                </ul>
-                                <a href="#" class="btn btn-outline-light  py-2 mt-3 w-100 text-uppercase btn-plan">
-                                    Elegir plan
-                                </a>
+                            </div>
+                        </div>
+
+                        <!--SECCION DEL PLAN PROFESIONAL-->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card h-100 text-center border-danger bg-dark plan-card plan-destacado">
+                                <div class="card-body d-flex flex-column position-relative">
+                                    <span
+                                        class="badge bg-danger text-white position-absolute top-0 start-50 translate-middle px-4  py-2 rounded-pill fw-bold">
+                                        Más popular
+                                    </span>
+                                    <h3 class="card-title text-white text-uppercase fs-4 mt-2">Profesional</h3>
+                                    <div class="my-3">
+                                        <span class="display-3 fw-bold text-white">$1,299</span>
+                                        <span class="text-secondary">/ mes</span>
+                                    </div>
+                                    <ul class="list-unstyled text-start text-white-50 flex-grow-1">
+                                        <li class=" py-2">Coaching personalizado</li>
+                                        <li class=" py-2">15% descuento en todo</li>
+                                        <li class=" py-2">Clases en vivo vía Zoom</li>
+                                        <li class=" py-2">Acceso anticipado a drops</li>
+                                    </ul>
+                                    <a href="#"
+                                        class="btn btn-danger  py-2 mt-3 w-100 text-uppercase btn-plan-destacado">
+                                        Comenzar ahora
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--SECCION DEL PLAN INTERMEDIO-->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card h-100 text-center border-secondary bg-dark plan-card">
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title text-white text-uppercase fs-4">Intermedio</h3>
+                                    <div class="my-3">
+                                        <span class="display-3 fw-bold text-white">$799</span>
+                                        <span class="text-secondary">/ mes</span>
+                                    </div>
+                                    <ul class="list-unstyled text-start text-white-50 flex-grow-1">
+                                        <li class=" py-2">Videos de entrenamiento</li>
+                                        <li class=" py-2">10% descuento en equipo</li>
+                                        <li class=" py-2">Plan nutricional base</li>
+                                    </ul>
+                                    <a href="#" class="btn btn-outline-light py-2 mt-3 w-100 text-uppercase btn-plan">
+                                        Elegir plan
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <!--SECCION DEL PLAN PROFESIONAL-->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card h-100 text-center border-danger bg-dark plan-card plan-destacado">
-                            <div class="card-body d-flex flex-column position-relative">
-                                <span
-                                    class="badge bg-danger text-white position-absolute top-0 start-50 translate-middle px-4  py-2 rounded-pill fw-bold">
-                                    Más popular
-                                </span>
-                                <h3 class="card-title text-white text-uppercase fs-4 mt-2">Profesional</h3>
-                                <div class="my-3">
-                                    <span class="display-3 fw-bold text-white">$1,299</span>
-                                    <span class="text-secondary">/ mes</span>
-                                </div>
-                                <ul class="list-unstyled text-start text-white-50 flex-grow-1">
-                                    <li class=" py-2">Coaching personalizado</li>
-                                    <li class=" py-2">15% descuento en todo</li>
-                                    <li class=" py-2">Clases en vivo vía Zoom</li>
-                                    <li class=" py-2">Acceso anticipado a drops</li>
-                                </ul>
-                                <a href="#" class="btn btn-danger  py-2 mt-3 w-100 text-uppercase btn-plan-destacado">
-                                    Comenzar ahora
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--SECCION DEL PLAN INTERMEDIO-->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card h-100 text-center border-secondary bg-dark plan-card">
-                            <div class="card-body d-flex flex-column">
-                                <h3 class="card-title text-white text-uppercase fs-4">Intermedio</h3>
-                                <div class="my-3">
-                                    <span class="display-3 fw-bold text-white">$799</span>
-                                    <span class="text-secondary">/ mes</span>
-                                </div>
-                                <ul class="list-unstyled text-start text-white-50 flex-grow-1">
-                                    <li class=" py-2">Videos de entrenamiento</li>
-                                    <li class=" py-2">10% descuento en equipo</li>
-                                    <li class=" py-2">Plan nutricional base</li>
-                                </ul>
-                                <a href="#" class="btn btn-outline-light py-2 mt-3 w-100 text-uppercase btn-plan">
-                                    Elegir plan
-                                </a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
 
     </main>
     <!--Footer con formulacio sencillo-->
     <footer class="p-4 bg-dark w-100">
         <!-- Conendio aqui -->
+        <span class="testimonial-kicker text-center" id="contacto">Contacto</span>
+        <!-- Título principal -->
+        <h2 class="section-title-center text-center text-uppercase">Necesitas Ayuda</h2>
         <div class="d-flex justify-content-center">
-            <form class="col-md-6 p-4 border rounded text-center w-100" id="form-send">
-                <h3 class="text-white">Contactanos</h3>
-                <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label text-white">Escribe tu correo</label>
-                <input type="email" class="form-control email" id="exampleFormControlInput1" placeholder="ejemplo@ejemplo.com">
+            <div class="container-md">
+                <form class="col-md-6 p-4 border rounded text-center w-100" id="form-send">
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label text-white">Escribe tu correo</label>
+                        <input type="email" class="form-control email" id="exampleFormControlInput1"
+                            placeholder="ejemplo@ejemplo.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label text-white">Agrega un
+                            comentario</label>
+                        <textarea class="form-control text" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger w-50">Enviar</button>
+                </form>
             </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label text-white">Agrega un comentario</label>
-                <textarea class="form-control text" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-danger w-50">Enviar</button>
-            </form>
         </div>
 
-        <div class="container col-md-4 col-lg-5 col-xl-4 mx-auto mt-3">
+        <div class="container col-md-4 col-lg-5 col-xl-4 mx-auto mt-3 text-center">
             <a class="text-decoration-none link-light m-3" href="#">Productos</a>
             <a class="text-decoration-none link-light m-3" href="#">Servicios</a>
             <a class="text-decoration-none link-light m-3" href="#">Nosotros</a>
@@ -604,10 +488,9 @@
     </footer>
 
     <script src="script.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -197,6 +197,7 @@ document.getElementById('form-send').addEventListener('submit', (e)=>{
 });
 document.addEventListener("DOMContentLoaded", function () {
     heroVideos();
+    carritoTelefono();
 })
 
 
@@ -230,5 +231,14 @@ function heroVideos() {
             video.src = `assets/video/video${videoActual}.mp4`;
         }
     })
+
+}
+
+function carritoTelefono(){
+    const li = document.createElement('LI');
+    li.classList.add('nav-item');
+
+    const button = document.createElement(' BUTTON')
+    
 
 }
